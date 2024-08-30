@@ -116,9 +116,13 @@ URCRNRLAT Upper right corner latitude of the map
 You can find find the bounding box coordinates using a number of geographic map tools including:
 http://bboxfinder.com
 
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/49f97931-b7df-4943-ad94-1b914b5f267d">
+<div align="center">
+  <img width="800" alt="image" src="https://github.com/user-attachments/assets/49f97931-b7df-4943-ad94-1b914b5f267d">
+</div>
 
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/f989f6e4-7d2b-4575-bdee-cfe92afb81c3">
+<div align="center">
+  <img width="800" alt="image" src="https://github.com/user-attachments/assets/f989f6e4-7d2b-4575-bdee-cfe92afb81c3">
+</div>
 
 
 #### Complex map:
