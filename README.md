@@ -1,6 +1,5 @@
 
-![Final_final_logo](https://github.com/user-attachments/assets/439cc02f-95d7-41c5-98e6-0cdc81d2e755)
-
+![Final_final_logo](https://github.com/user-attachments/assets/59fe9192-c662-4cf4-99f8-a72acd5e09cd)
 
 # Overview
 
