@@ -187,8 +187,8 @@ python Geomaps_pie.py --shape_file /home/phe.gov.uk/emily.fotopoulou/Documents/P
 ![figure_1](https://github.com/user-attachments/assets/d915717e-d201-4194-98e2-9bffdd9b8ef9)
 
 
-# Online Tutorial
-[![General Badge](https://img.shields.io/badge/YouTube-Tutorial-%23FF0000?style=plastic&labelColor=%23282828&color=%23FF0000&link=https%3A%2F%2F)](https://www.youtube.com/watch?v=wGJHwc5ksMA)
+# Online Tutorial[![General Badge](https://img.shields.io/badge/YouTube-Tutorial-%23FF0000?style=plastic&labelColor=%23282828&color=%23FF0000&link=https%3A%2F%2F)](https://www.youtube.com/watch?v=wGJHwc5ksMA)
+
 youtube link
 
 # Acknoledgments
