@@ -12,11 +12,16 @@ The program requires a shapefile for the geographic plotting and a corresponding
 # Table of contents
 * [Installation](#Installation)
 * [Inputs](#Inputs)
-
+* [Arguments](#Arguments)
+* [Output](#Output)
+* [Usage and Examples](#Usage)
+* [Online Tutorial](#Tutorial)
+* [Acknowledgments](#Acknowledgments)
 
 # Installation <a name="Installation"></a>
 ## Dependencies
-### Manual Instalation
+### Manual Installation
+
 ```
 conda install anaconda::pandas
 conda install conda-forge::basemap
@@ -28,7 +33,7 @@ conda install plotly::plotly
 conda install conda-forge::fiona
 conda install conda-forge::shapely
 conda install conda-forge::argparse
-conda install conda-forge::matplotlib **
+conda install conda-forge::matplotlib *
 conda install conda-forge::time
 conda install conda-forge::openpyxl
 conda install conda-forge::typed-ast
@@ -38,12 +43,13 @@ conda install conda-forge::progressbar
 > [!NOTE]
 > Note version of matplotlib that works faster is 3.5.2*
 
-Alternatively, by downloading the Github repository and activating the environment like shown in section bellow
+\
+_Alternatively, by downloading the Github repository and activating the environment like shown in section below._
 
-### Github repository installation
+### GitHub repository installation
 
 ```
-# Download this GIthub repository
+# Download this GitHub repository
 git clone https://github.com/EmilyFotopoulou/Geomaps_pie.py.git
 
 # Set up conda dependencies 
@@ -56,31 +62,35 @@ conda activate env_geomaps.yml
 > [!TIP]
 > Test successful instalation by running:
 > 
-> python Geomaps_pie.py --shape_file .../jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file .../Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"
+> `python Geomaps_pie.py --shape_file jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"`
 
 # Inputs <a name="Inputs"></a>
 The program requires 4 inputs to run.
-1)	A shape file (.shp) with the country and or regions to be plotted. Shape files vary throughout different databases, may not have the required columns. File needs to contain a column with geographical named divisions (Eg ADM1_EN). To amend this, please see section bellow. Eg:
+1)	A shape file (.shp) with the country and or regions to be plotted. Shape files vary throughout different databases, may not have the required columns. File needs to contain a column with geographical named divisions (e.g.ADM1_EN). To amend this, please see section below. E.g.:
 
 <div align="center">
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/719f4e97-0a57-42eb-8b4b-3a8b0e77c144">
 </div>
 
-2) 	Only two columns are essential for the program to run. A metadata file (.xlsx) with the same country and or regions to be plotted (column must be named “RGN21NM”) and at least one column with categorical values (eg Plasmids) used for the pie charts.  Optional numerical column used for the background map density values (eg Population). Any additional columns can be added (eg Isolates) without affecting the efficiency or function of the program. Eg:
+2) 	A metadata file (.xlsx) is required. It should have a minimum of two columns for the program to run. One column should be the country and/or regions to be plotted (the column must be named “RGN21NM” and this column should match the shapefile *) and at least one column with categorical values (e.g. Plasmids) used for the pie charts.  Optional numerical column used for the background map density values (e.g. Population). Any additional columns can be added (e.g. Isolates) without affecting the efficiency or function of the program. E.g.:
   
 <div align="center">
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/f7af83e2-6058-47d0-83cd-b5c1a7cf3817">
 </div>
 
+> [!NOTE]
+> If your shapefile is missing the column 'RGN21NM' it can be adjusted with the `fix_shape.py` script.*
+<br/>
 
 3) The name of the column containing the categorical values to be used for the pie charts.
-Eg: 'Plasmids'
+E.g.: 'Plasmids'
 
 4) A dictionary linking the categorical values of the pie charts to the desired colours for the pie chart sections. 
-Eg: 
+E.g.: 
 "{'InCFIB':'yellow', 'InCP':'red', 'InCA/C':'pink’, 'InCN':'blueviolet'}"
 
-# Arguments
+
+# Arguments <a name="Arguments"></a>
 `
 usage: Geomaps_pie.py [-h] (--shape_file --metadata_file --agg_column --colours_dict --llcrnrlon --llcrnrlat --urcrnrlon --urcrnrlat --agg_mapinfo --colormap --plainmapcol --simple_map_boundaries --label_style --pie_fontsize --pie_rotation --pie_size --pie_text_loc --colorbar_title --colorbar_fontsize --legend_title --legend_fontsize --legend_bbox_to_anchor --output_file_prefix --file_format --dpi)
 `
@@ -91,7 +101,7 @@ usage: Geomaps_pie.py [-h] (--shape_file --metadata_file --agg_column --colours_
 
 **`--agg_column`**  : a string with the name of the column for the pie charts
 
-**`--colours_dict`**  : a dictionary (see format above) assigning pie values with colours 
+**`--colours_dict`**  : a dictionary (see format above) assigning pie values to colours 
 
 ## Optional
 
@@ -103,8 +113,8 @@ URCRNRLON Upper right corner longitude of the map
 URCRNRLAT Upper right corner latitude of the map 
 ```
 
-Access bounding box set of coordinates from geographic map tool:
-http://bboxfinder.com/#0.000000,0.000000,0.000000,0.000000
+You can find find the bounding box coordinates using a number of geographic map tools including:
+http://bboxfinder.com
 
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/49f97931-b7df-4943-ad94-1b914b5f267d">
 
@@ -173,13 +183,14 @@ Ranges for bbox_to_anchor
 
 **`--dpi`**  : a numerical value of the DPI figure resolution saved in dots per inch. Default is 300.
 
-# Output
+# Output <a name="Output"></a>
 
 The program generates a geographical map plot, which is displayed and exported as an image in the desired format (PNG, JPEG, SVG, or PDF) with PNG as the default.
 
 Unless otherwise specified, the output file will be saved in the working directory with the name “Output_map.png.”
 
-# Usage and Examples
+# Usage and Examples <a name="Usage"></a>
+
 #### simple graph:
 ```
 python Geomaps_pie4.py --shape_file /home/phe.gov.uk/emily.fotopoulou/Documents/PythonScripts/python-scripts/shapes/shaaaaaaaaapes/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"
@@ -193,10 +204,10 @@ python Geomaps_pie.py --shape_file /home/phe.gov.uk/emily.fotopoulou/Documents/P
 ```
 ![figure_1](https://github.com/user-attachments/assets/d915717e-d201-4194-98e2-9bffdd9b8ef9)
 
-
-# Online Tutorial    [![General Badge](https://img.shields.io/badge/YouTube-Tutorial-%23FF0000?style=plastic&labelColor=%23282828&color=%23FF0000&link=https%3A%2F%2F)](https://www.youtube.com/watch?v=wGJHwc5ksMA)
+# Online Tutorial <a name="Tutorial"></a>    [![General Badge](https://img.shields.io/badge/YouTube-Tutorial-%23FF0000?style=plastic&labelColor=%23282828&color=%23FF0000&link=https%3A%2F%2F)](https://www.youtube.com/watch?v=wGJHwc5ksMA)
 
 youtube link
 
-# Acknoledgments
+# Acknowledgments <a name="Acknowledgments"></a> 
+
 I would like to extend my sincere gratitude to _**Dr. Duncan Berger**_ for their invaluable contributions during the development of this program. Their time and effort, insightful input, assistance with bug testing, and unwavering support have been instrumental in the finalisation of this work. I deeply appreciate their collaboration and commitment throughout the development process.
