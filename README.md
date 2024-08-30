@@ -215,4 +215,4 @@ youtube link
 
 # Acknowledgments <a name="Acknowledgments"></a> 
 
-I would like to extend my sincere gratitude to _**Dr. Duncan Berger**_ for their invaluable contributions during the development of this program. Their time and effort, insightful input, assistance with bug testing, and unwavering support have been instrumental in the finalisation of this work. I deeply appreciate their collaboration and commitment throughout the development process.
+I would like to extend my sincere gratitude to [_**Dr. Duncan Berger**_](https://github.com/duncanberger) for their invaluable contributions during the development of this program. Their time and effort, insightful input, assistance with bug testing, and unwavering support have been instrumental in the finalisation of this work. I deeply appreciate their collaboration and commitment throughout the development process.
