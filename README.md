@@ -126,7 +126,7 @@ http://bboxfinder.com/#0.000000,0.000000,0.000000,0.000000
 
 **`--pie_size`**  : a numerical value setting the size of the pie chart. Default size 100. 
 
-**`--pie_text_loc`**  : a numerical value setting the distance from the centre of each pie chart to display the text marker. 
+**`--pie_text_loc`**  : a numerical value setting the distance from the centre of each pie chart to display the text marker. Range 0-1.
 
 #### Colour bar editing:
 
