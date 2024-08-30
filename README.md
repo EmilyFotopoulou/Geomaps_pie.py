@@ -8,9 +8,13 @@ Geomaps_pie.py  is a Python program designed to plot geographical locations and 
 The program requires a shapefile for the geographic plotting and a corresponding metadata file (in xlsx format) to generate the pie chart visualizations.
 
 ![examples](https://github.com/user-attachments/assets/fed14800-53cf-4768-a03a-b129ba5daba2)
-# Table of contents
 
-# Instalation
+# Table of contents
+* [Installation](#Installation)
+* [Inputs](#Inputs)
+
+
+# Installation <a name="Installation"></a>
 ## Dependencies
 ### Manual Instalation
 ```
@@ -54,15 +58,20 @@ conda activate env_geomaps.yml
 > 
 > python Geomaps_pie.py --shape_file .../jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file .../Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"
 
-# Inputs
+# Inputs <a name="Inputs"></a>
 The program requires 4 inputs to run.
 1)	A shape file (.shp) with the country and or regions to be plotted. Shape files vary throughout different databases, may not have the required columns. File needs to contain a column with geographical named divisions (Eg ADM1_EN). To amend this, please see section bellow. Eg:
 
-<img width="442" alt="image" src="https://github.com/user-attachments/assets/719f4e97-0a57-42eb-8b4b-3a8b0e77c144">
+<div align="center">
+  <img width="800" alt="image" src="https://github.com/user-attachments/assets/719f4e97-0a57-42eb-8b4b-3a8b0e77c144">
+</div>
 
 2) 	Only two columns are essential for the program to run. A metadata file (.xlsx) with the same country and or regions to be plotted (column must be named “RGN21NM”) and at least one column with categorical values (eg Plasmids) used for the pie charts.  Optional numerical column used for the background map density values (eg Population). Any additional columns can be added (eg Isolates) without affecting the efficiency or function of the program. Eg:
   
-<img width="241" alt="image" src="https://github.com/user-attachments/assets/f7af83e2-6058-47d0-83cd-b5c1a7cf3817">
+<div align="center">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/f7af83e2-6058-47d0-83cd-b5c1a7cf3817">
+</div>
+
 
 3) The name of the column containing the categorical values to be used for the pie charts.
 Eg: 'Plasmids'
