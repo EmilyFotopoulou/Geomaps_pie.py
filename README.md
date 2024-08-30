@@ -80,7 +80,7 @@ The program requires 4 inputs to run.
 </div>
 
 > [!NOTE]
-> If your shapefile is missing the column 'RGN21NM' it can be adjusted with the `fix_shape.py` script.*
+> If your shapefile is missing the column 'RGN21NM' it can be adjusted with the `fix_shapefile.py` script.*
 <br/>
 
 3) The name of the column containing the categorical values to be used for the pie charts.
@@ -90,14 +90,35 @@ E.g.: 'Plasmids'
 E.g.: 
 "{'InCFIB':'yellow', 'InCP':'red', 'InCA/C':'pink’, 'InCN':'blueviolet'}"
 
-## Editing shapefiles.
-This script will edit your shapefile to adjust your headers to the correct name structure.
+## Editing shapefiles
+_This script will edit your shapefile to adjust your headers to the correct name structure._
 
-write desctiption of how the program should run
 
-run the script twice
+The script needs to be run twice. For the first run, simply provide the directory path to your shapefile. E.g.:
+
+`python fix_shapefile.py –-shapefile jam_admbnda_adm1_sdc_20240802_fixed.shp`
+
+> [!NOTE]
+> The areas could be regions, countries, cities or any geographic specification you require.
+> 
+> Ensure that the areas chosen on your shapefile are in the same format as in your metadata file. (e.g. if your shapefile contains 'London' and your metadata contains "Greater London Area") Geomaps_pie.py wont run successfully.
+<br/>
+
+The program will display the first 5 rows of your shapefile, allowing you to identify the column that contains the area names you want to plot.  
+<br/>
+
+After identifying the column of interest, run the code a second time, specifying the column you want to plot.
+`python fix_shapefile.py –-shapefile jam_admbnda_adm1_sdc_20240802_fixed.shp --column "NAMA1"`
+
+This will adjust your shape file for the Geomaps_pie.py to run.
+
+> [!TIP]
+> Don’t forget to adjust your input shape file to 'the _fixed' version.
+
 
 ### Usage exaple
+
+printscreens
 
 # Arguments <a name="Arguments"></a>
 `
