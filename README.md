@@ -120,18 +120,19 @@ http://bboxfinder.com
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/49f97931-b7df-4943-ad94-1b914b5f267d">
 </div>
 
+<br />
 <div align="center">
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/f989f6e4-7d2b-4575-bdee-cfe92afb81c3">
 </div>
 
 
-#### Complex map:
+#### Embelished map - diplays choropleth information on map along the pie charts:
 
 **`--agg_mapinfo`**  : a string with the name of the column for the map background density information
 
 **`--colormap`**  : a string with the name of a Matplotlib pallet, or a list of at least two custom Hex colour codes. (use -h for colour pallet options and example of list of Hex code in examples section). 
 
-#### Simple map:
+#### Simple map - only displays map area and boundaries along the pie charts:
 
 **`--plainmapcol`**  : a string of a Matplotlib colour or Hex colour code setting the background colour of the map. Default: “lightsteelblue”
 
@@ -151,17 +152,17 @@ http://bboxfinder.com
 
 #### Colour bar editing:
 
-**`--colorbar_title`**  : a string setting the tittle of the Colorbar displaying map density. 
+**`--colorbar_title`**  : a string setting the title of the Colorbar displaying map density. 
 
-**`--colorbar_fontsize`**  : a numerical value setting the font size of the tittle of the colorbar
+**`--colorbar_fontsize`**  : a numerical value setting the font size of the title of the colorbar.
 
 #### Figure legend editing:
 
-**`--legend_title`**  : a string setting the tittle of the information displayed on the pie charts. 
+**`--legend_title`**  : a string setting the title of the information displayed on the pie charts. 
 
-**`--legend_fontsize`**  : a numerical value setting the font size of the legend box. Note, the tittle of the legend will always be 5 points larger than the rest of the legend box.
+**`--legend_fontsize`**  : a numerical value setting the font size of the legend box. Note, the title of the legend will always be 5 points larger than the rest of the legend box.
 
-**`--legend_bbox_to_anchor`**  : a set of four numerical values that set the coordinates for position of legend box. Default = 0.005 0.6 0 0. Follows the same structure as Matplotlib's legend function bbox_to_anchor where tuple is (x,y,width, height).
+**`--legend_bbox_to_anchor`**  : a set of four numerical values that set the coordinates for position of legend box. Default = 0.005 0.6 0 0. Follows the same structure as Matplotlib's legend function bbox_to_anchor where tuple is (x, y, width, height).
 
 ```
 The bbox_to_anchor parameter in Matplotlib’s legend function allows you to specify the location of the legend relative to the bounding box of the axes or figure. This parameter takes a tuple of the form (x, y, width, height), where:
@@ -183,7 +184,7 @@ Ranges for bbox_to_anchor
 
 **`--output_file_prefix`**  : a string of the name for the desired output map file. Omit file format extension.
 
-**`--file_format`**  : a string of the format type for output figure. Default is png. Options: png,jpeg,svg,pdf 
+**`--file_format`**  : a string of the format type for output figure. Default is png. Options: png, jpeg, svg, pdf 
 
 **`--dpi`**  : a numerical value of the DPI figure resolution saved in dots per inch. Default is 300.
 
@@ -195,7 +196,7 @@ Unless otherwise specified, the output file will be saved in the working directo
 
 # Usage and Examples <a name="Usage"></a>
 
-#### simple graph:
+#### Simple graph:
 ```
 python Geomaps_pie4.py --shape_file /home/phe.gov.uk/emily.fotopoulou/Documents/PythonScripts/python-scripts/shapes/shaaaaaaaaapes/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"
 ```
