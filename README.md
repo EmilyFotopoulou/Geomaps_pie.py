@@ -176,7 +176,8 @@ Unless otherwise specified, the output file will be saved in the working directo
 #### simple graph:
 python Geomaps_pie4.py --shape_file /home/phe.gov.uk/emily.fotopoulou/Documents/PythonScripts/python-scripts/shapes/shaaaaaaaaapes/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"
 
-![Output_map (1)](https://github.com/user-attachments/assets/a08b37ce-7bbc-4e89-822a-01dc7c717366)
+![image](https://github.com/user-attachments/assets/a991f403-d2c6-464b-ad13-aea02798fe83)
+
 
 #### Embelished graph:
 
@@ -184,4 +185,4 @@ python Geomaps_pie4.py --shape_file /home/phe.gov.uk/emily.fotopoulou/Documents/
 youtube link
 
 # Acknoledgments
-I would like to extend my sincere gratitude to Dr. Duncan Berger for their invaluable contributions during the development of this program. Their time and effort, insightful input, assistance with bug testing, and unwavering support have been instrumental in the finalisation of this work. I deeply appreciate their collaboration and commitment throughout the development process.![image](https://github.com/user-attachments/assets/3377a4c6-50d3-4139-a2e8-17897298ec0f)
+I would like to extend my sincere gratitude to _**Dr. Duncan Berger**_ for their invaluable contributions during the development of this program. Their time and effort, insightful input, assistance with bug testing, and unwavering support have been instrumental in the finalisation of this work. I deeply appreciate their collaboration and commitment throughout the development process.
