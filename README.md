@@ -9,7 +9,8 @@ Geomaps_pie.py  is a Python program designed to plot geographical locations and 
 
 The program requires a shapefile for the geographic plotting and a corresponding metadata file (in xlsx format) to generate the pie chart visualizations.
 
-![examples](https://github.com/user-attachments/assets/b09d9f5f-cad1-4dd5-851a-997e68f479fa)
+![examples](https://github.com/user-attachments/assets/fed14800-53cf-4768-a03a-b129ba5daba2)
+
 
 
 
