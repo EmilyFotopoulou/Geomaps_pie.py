@@ -108,6 +108,7 @@ The program will display the first 5 rows of your shapefile, allowing you to ide
 <br/>
 
 After identifying the column of interest, run the code a second time, specifying the column you want to plot.
+
 `python fix_shapefile.py –-shapefile jam_admbnda_adm1_sdc_20240802_fixed.shp --column "NAMA1"`
 
 This will adjust your shape file for the Geomaps_pie.py to run.
