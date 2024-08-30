@@ -89,6 +89,14 @@ E.g.: 'Plasmids'
 E.g.: 
 "{'InCFIB':'yellow', 'InCP':'red', 'InCA/C':'pink’, 'InCN':'blueviolet'}"
 
+## Editing shapefiles.
+This script will edit your shapefile to adjust your headers to the correct name structure.
+
+write desctiption of how the program should run
+
+run the script twice
+
+### Usage exaple
 
 # Arguments <a name="Arguments"></a>
 `
