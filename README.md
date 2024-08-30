@@ -174,12 +174,17 @@ Unless otherwise specified, the output file will be saved in the working directo
 
 # Usage and Examples
 #### simple graph:
+```
 python Geomaps_pie4.py --shape_file /home/phe.gov.uk/emily.fotopoulou/Documents/PythonScripts/python-scripts/shapes/shaaaaaaaaapes/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"
-
+```
 ![image](https://github.com/user-attachments/assets/a991f403-d2c6-464b-ad13-aea02798fe83)
 
 
 #### Embelished graph:
+```
+python Geomaps_pie.py --shape_file /home/phe.gov.uk/emily.fotopoulou/Documents/PythonScripts/python-scripts/shapes/shaaaaaaaaapes/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Jamaica_metadata_test.xlsx --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}" --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_mapinfo="Population" --colormap="['#E7F3FF', 'pink']" --label_style='style1' --pie_fontsize=15 --pie_rotation=45 --pie_size=500 --pie_text_loc=0.05 --colorbar_title="Population Density" --colorbar_fontsize=20 --legend_title='Plasmids' --legend_fontsize=15 --output_file_prefix='Jamaica_map_population_and_plasmids' --file_format="pdf"
+```
+[Jamaica_map_population_and_plasmids (1).pdf](https://github.com/user-attachments/files/16815847/Jamaica_map_population_and_plasmids.1.pdf)
 
 # Online Tutorial
 youtube link
