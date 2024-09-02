@@ -171,7 +171,7 @@ http://bboxfinder.com
 
 #### Pie chart editing:
 
-**`--label_style`**  : Option of strings: ‘None’, ‘ style1‘, ‘style2’. Setting the marker label style printed on top of the pie charts. Style1 shows the precentages of each pie segment. Style2 shows the total number of counts per region. 
+**`--label_style`**  : Option of strings: ‘None’, ‘style1‘, ‘style2’. Setting the marker label style printed on top of the pie charts. Style1 shows the precentages of each pie segment. ‘style2‘ shows the total number of counts per region. 
 
 **`--pie_fontsize`**  : a numerical value setting the font of the marker labels on the pie chart charts. 
 
@@ -179,7 +179,7 @@ http://bboxfinder.com
 
 **`--pie_size`**  : a numerical value setting the size of the pie chart. Default size: 100. 
 
-**`--pie_text_loc`**  : a numerical value setting the distance from the centre of each pie chart to display the text marker. Range 0-1.
+**`--pie_text_loc`**  : a numerical value setting the distance from the centre of each pie chart to display the text marker. Range: 0-1.
 
 #### Colour bar editing:
 
@@ -193,7 +193,7 @@ http://bboxfinder.com
 
 **`--legend_fontsize`**  : a numerical value setting the font size of the legend box. Note, the title of the legend will always be 5 points larger than the rest of the legend box.
 
-**`--legend_bbox_to_anchor`**  : a set of four numerical values that set the coordinates for position of legend box. Default = 0.005 0.6 0 0. Follows the same structure as Matplotlib's legend function bbox_to_anchor where tuple is (x, y, width, height).
+**`--legend_bbox_to_anchor`**  : a set of four numerical values that set the coordinates for position of legend box. Default: 0.005 0.6 0 0. Follows the same structure as Matplotlib's legend function bbox_to_anchor where tuple is (x, y, width, height).
 
 ```
 The bbox_to_anchor parameter in Matplotlib’s legend function allows you to specify the location of the legend relative to the bounding box of the axes or figure. This parameter takes a tuple of the form (x, y, width, height), where:
