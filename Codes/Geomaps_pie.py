@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-__version__ = '0.1'
-__date__ = '13-08-2024'
+__version__ = '1.0'
+__date__ = '02-09-2024'
 __author__ = 'E.F.Fotopoulou'
 
 import pandas as pd
