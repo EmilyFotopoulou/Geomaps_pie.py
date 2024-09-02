@@ -47,7 +47,7 @@ _Alternatively, by downloading the Github repository and activating the environm
 
 ```
 # Download this GitHub repository
-git clone https://github.com/EmilyFotopoulou/Geomaps_pie.py.git
+git clone https://github.com/EmilyFotopoulou/.git
 
 # Set up conda dependencies 
 conda env create -f env_geomaps.yml 
@@ -62,7 +62,7 @@ conda activate env_geomaps
 > [!TIP]
 > Test successful installation by running:
 > 
-> `python Geomaps_pie.py --shape_file Example_files/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Example_files/Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"`
+> `python Codes/Geomaps_pie.py --shape_file Example_files/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Example_files/Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"`
 
 
 >[!NOTE]
