@@ -33,17 +33,8 @@ The program requires a shapefile for the geographic plotting and a corresponding
 ### Manual Installation
 
 ```
-conda install conda-forge::pandas
-conda install conda-forge::basemap
-conda install conda-forge::numpy
-conda install conda-forge::geopandas
-conda install plotly::plotly
-conda install conda-forge::fiona
-conda install conda-forge::shapely
-conda install conda-forge::matplotlib *
-conda install conda-forge::openpyxl
-conda install conda-forge::typed-ast
-conda install conda-forge::progressbar
+conda install conda-forge::matplotlib-base=3.5.2 conda-forge::pandas conda-forge::basemap conda-forge::geopandas plotly::plotly conda-forge::fiona conda-forge::shapely conda-forge::openpyxl conda-forge::typed-ast conda-forge::progressbar
+
 ```
 
 > [!NOTE]
@@ -124,7 +115,9 @@ This will adjust your shape file for the Geomaps_pie.py to run.
 
 ### Usage exaple
 
-printscreens
+![image1-0](https://github.com/user-attachments/assets/c19afda4-53d4-48e7-8755-bc873d0e70ff)
+
+
 
 # Arguments <a name="Arguments"></a>
 `
