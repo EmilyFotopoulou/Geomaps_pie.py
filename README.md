@@ -31,18 +31,14 @@ The program requires a shapefile for the geographic plotting and a corresponding
 ### Manual Installation
 
 ```
-conda install anaconda::pandas
+conda install conda-forge::pandas
 conda install conda-forge::basemap
-conda install anaconda::numpy
+conda install conda-forge::numpy
 conda install conda-forge::geopandas
-conda install jmcmurray::os
-conda install anaconda::basemap
 conda install plotly::plotly
 conda install conda-forge::fiona
 conda install conda-forge::shapely
-conda install conda-forge::argparse
 conda install conda-forge::matplotlib *
-conda install conda-forge::time
 conda install conda-forge::openpyxl
 conda install conda-forge::typed-ast
 conda install conda-forge::progressbar
