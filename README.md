@@ -33,8 +33,8 @@ The program requires a shapefile for the geographic plotting and a corresponding
 ### Manual Installation
 
 ```
+>you can manually install all dependencies by running:
 conda install conda-forge::matplotlib-base=3.5.2 conda-forge::pandas conda-forge::basemap conda-forge::geopandas plotly::plotly conda-forge::fiona conda-forge::shapely conda-forge::openpyxl conda-forge::typed-ast conda-forge::progressbar
-
 ```
 
 > [!NOTE]
@@ -53,8 +53,11 @@ git clone https://github.com/EmilyFotopoulou/Geomaps_pie.py.git
 conda env create -f env_geomaps.yml 
 
 # Activate environment
-conda activate env_geomaps.yml
+conda activate env_geomaps
 ```
+
+![conda_env](https://github.com/user-attachments/assets/2c9c7194-cc25-45df-a587-952a0603add1)
+
 
 > [!TIP]
 > Test successful instalation by running:
@@ -76,7 +79,7 @@ The program requires 4 inputs to run.
 </div>
 
 > [!NOTE]
-> If your shapefile is missing the column 'RGN21NM' it can be adjusted with the `fix_shapefile.py` script.*
+> If your shapefile is missing the column 'RGN21NM' it can be adjusted with the `fix_shapefile.py` script.* [Editing shapefiles]()
 <br/>
 
 3) The name of the column containing the categorical values to be used for the pie charts.
@@ -92,7 +95,7 @@ _This script will edit your shapefile to adjust your headers to the correct name
 
 The script needs to be run twice. For the first run, simply provide the directory path to your shapefile. E.g.:
 
-`python fix_shapefile.py –-shapefile jam_admbnda_adm1_sdc_20240802_fixed.shp`
+`python fix_shapefile.py –-shapefile jam_admbnda_adm1_sdc_20240802.shp`
 
 > [!NOTE]
 > The areas could be regions, countries, cities or any geographic specification you require.
@@ -113,10 +116,9 @@ This will adjust your shape file for the Geomaps_pie.py to run.
 > Don’t forget to adjust your input shape file to 'the _fixed' version.
 
 
-### Usage exaple
+### Exaple
 
-![image1-0](https://github.com/user-attachments/assets/c19afda4-53d4-48e7-8755-bc873d0e70ff)
-
+![fix_shape](https://github.com/user-attachments/assets/a7d8178b-fbec-4555-928b-6b1b80f296b0)
 
 
 # Arguments <a name="Arguments"></a>
