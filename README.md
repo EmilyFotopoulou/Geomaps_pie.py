@@ -64,6 +64,11 @@ conda activate env_geomaps
 > 
 > `python Geomaps_pie.py --shape_file Example_files/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Example_files/Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"`
 
+
+>[!NOTE]
+> Shapefiles for the examples used in this document have been downloaded from [here](https://data.humdata.org/dataset/cod-ab-jam).
+
+
 # Inputs <a name="Inputs"></a>
 The program requires 4 inputs to run.
 1)	A shapefile (.shp) with the country and or regions to be plotted. Shapefiles vary throughout different databases, may not have the required columns. File needs to contain a column with geographical named divisions (e.g.ADM1_EN). To amend this, please see section below. E.g.:
