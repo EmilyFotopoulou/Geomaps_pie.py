@@ -79,7 +79,7 @@ The program requires 4 inputs to run.
 </div>
 
 > [!NOTE]
-> If your shapefile is missing the column 'RGN21NM' it can be adjusted with the `fix_shapefile.py` script.* [Editing shapefiles]()
+> If your shapefile is missing the column 'RGN21NM' it can be adjusted with the `fix_shapefile.py` script.* [Editing shapefiles](https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/README.md#editshape)
 <br/>
 
 3) The name of the column containing the categorical values to be used for the pie charts.
@@ -89,7 +89,7 @@ E.g.: 'Plasmids'
 E.g.: 
 "{'InCFIB':'yellow', 'InCP':'red', 'InCA/C':'pink’, 'InCN':'blueviolet'}"
 
-## Editing shapefiles
+## Editing shapefiles <a name="editshape"></a>
 _This script will edit your shapefile to adjust your headers to the correct name structure._
 
 
