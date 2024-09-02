@@ -66,7 +66,7 @@ conda activate env_geomaps
 
 # Inputs <a name="Inputs"></a>
 The program requires 4 inputs to run.
-1)	A shape file (.shp) with the country and or regions to be plotted. Shape files vary throughout different databases, may not have the required columns. File needs to contain a column with geographical named divisions (e.g.ADM1_EN). To amend this, please see section below. E.g.:
+1)	A shapefile (.shp) with the country and or regions to be plotted. Shapefiles vary throughout different databases, may not have the required columns. File needs to contain a column with geographical named divisions (e.g.ADM1_EN). To amend this, please see section below. E.g.:
 
 <div align="center">
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/719f4e97-0a57-42eb-8b4b-3a8b0e77c144">
@@ -110,10 +110,10 @@ After identifying the column of interest, run the code a second time, specifying
 
 `python fix_shapefile.py –-shapefile jam_admbnda_adm1_sdc_20240802_fixed.shp --column "NAMA1"`
 
-This will adjust your shape file for the Geomaps_pie.py to run.
+This will adjust your shapefile for the Geomaps_pie.py to run.
 
 > [!TIP]
-> Don’t forget to adjust your input shape file to 'the _fixed' version.
+> Don’t forget to adjust your input shapefile to 'the _fixed' version.
 
 
 ### Exaple
@@ -126,7 +126,7 @@ This will adjust your shape file for the Geomaps_pie.py to run.
 usage: Geomaps_pie.py [-h] (--shape_file --metadata_file --agg_column --colours_dict --llcrnrlon --llcrnrlat --urcrnrlon --urcrnrlat --agg_mapinfo --colormap --plainmapcol --simple_map_boundaries --label_style --pie_fontsize --pie_rotation --pie_size --pie_text_loc --colorbar_title --colorbar_fontsize --legend_title --legend_fontsize --legend_bbox_to_anchor --output_file_prefix --file_format --dpi)
 `
 ## Mandatory
-**`--shape_file`** : directory to input shape file .shp
+**`--shape_file`** : directory to input shapefile .shp
 
 **`--metadata_file`**  : directory to metadata excel file .xlsx
 
@@ -177,7 +177,7 @@ http://bboxfinder.com
 
 **`--pie_rotation`**  : a numerical value setting the angle of rotation.
 
-**`--pie_size`**  : a numerical value setting the size of the pie chart. Default size 100. 
+**`--pie_size`**  : a numerical value setting the size of the pie chart. Default size: 100. 
 
 **`--pie_text_loc`**  : a numerical value setting the distance from the centre of each pie chart to display the text marker. Range 0-1.
 
