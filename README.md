@@ -10,6 +10,13 @@ The program requires a shapefile for the geographic plotting and a corresponding
 
 ![examples](https://github.com/user-attachments/assets/fed14800-53cf-4768-a03a-b129ba5daba2)
 
+
+![examples2](https://github.com/user-attachments/assets/74d1e556-153f-4058-be54-102b3da9a139)
+
+> [!IMPORTANT]
+> Please note that all examples shown are based on dummy data, created solely for the purpose of demonstrating the program's capabilities. The figures presented do not reflect actual trends.
+
+
 # Table of contents
 * [Installation](#Installation)
 * [Inputs](#Inputs)
