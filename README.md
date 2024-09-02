@@ -95,7 +95,7 @@ _This script will edit your shapefile to adjust your headers to the correct name
 
 The script needs to be run twice. For the first run, simply provide the directory path to your shapefile. E.g.:
 
-`python fix_shapefile.py –-shapefile jam_admbnda_adm1_sdc_20240802.shp`
+`python fix_shapefile.py –-shapefile Example_files/jam_admbnda_adm1_sdc_20240802.shp`
 
 > [!NOTE]
 > The areas could be regions, countries, cities or any geographic specification you require.
@@ -108,7 +108,7 @@ The program will display the first 5 rows of your shapefile, allowing you to ide
 
 After identifying the column of interest, run the code a second time, specifying the column you want to plot.
 
-`python fix_shapefile.py –-shapefile jam_admbnda_adm1_sdc_20240802_fixed.shp --column "ADM1_EN"`
+`python fix_shapefile.py –-shapefile Example_files/jam_admbnda_adm1_sdc_20240802.shp --column "ADM1_EN"`
 
 This will adjust your shapefile for the Geomaps_pie.py to run.
 
@@ -171,7 +171,7 @@ http://bboxfinder.com
 
 #### Pie chart editing:
 
-**`--label_style`**  : Option of strings: ‘None’, ‘style1‘, ‘style2’. Setting the marker label style printed on top of the pie charts. Style1 shows the precentages of each pie segment. ‘style2‘ shows the total number of counts per region. 
+**`--label_style`**  : Option of strings: ‘None’, ‘style1‘, ‘style2’. Setting the marker label style printed on top of the pie charts. ‘style1‘ shows the precentages of each pie segment. ‘style2‘ shows the total number of counts per region. 
 
 **`--pie_fontsize`**  : a numerical value setting the font of the marker labels on the pie chart charts. 
 
@@ -223,26 +223,26 @@ Ranges for bbox_to_anchor
 
 The program generates a geographical map plot, which is displayed and exported as an image in the desired format (PNG, JPEG, SVG, or PDF) with PNG as the default.
 
-Unless otherwise specified, the output file will be saved in the working directory with the name “Output_map.png.”
+Unless otherwise specified, the output file will be saved in the working directory with the name “Output_map.png”.
 
 # Usage and Examples <a name="Usage"></a>
 
 #### Simple graph:
 ```
-python Geomaps_pie4.py --shape_file /home/phe.gov.uk/emily.fotopoulou/Documents/PythonScripts/python-scripts/shapes/shaaaaaaaaapes/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"
+python Geomaps_pie.py --shape_file Example_files/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Example_files/Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"
 ```
 ![image](https://github.com/user-attachments/assets/a991f403-d2c6-464b-ad13-aea02798fe83)
 
 
 #### Embelished graph:
 ```
-python Geomaps_pie.py --shape_file /home/phe.gov.uk/emily.fotopoulou/Documents/PythonScripts/python-scripts/shapes/shaaaaaaaaapes/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Jamaica_metadata_test.xlsx --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}" --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_mapinfo="Population" --colormap="['#E7F3FF', 'pink']" --label_style='style1' --pie_fontsize=15 --pie_rotation=45 --pie_size=500 --pie_text_loc=0.05 --colorbar_title="Population Density" --colorbar_fontsize=20 --legend_title='Plasmids' --legend_fontsize=15 --output_file_prefix='Jamaica_map_population_and_plasmids' --file_format="pdf"
+python Geomaps_pie.py --shape_file Example_files/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Example_files/Jamaica_metadata_test.xlsx --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}" --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_mapinfo="Population" --colormap="['#E7F3FF', 'pink']" --label_style='style1' --pie_fontsize=15 --pie_rotation=45 --pie_size=500 --pie_text_loc=0.05 --colorbar_title="Population Density" --colorbar_fontsize=20 --legend_title='Plasmids' --legend_fontsize=15 --output_file_prefix='Jamaica_map_population_and_plasmids' --file_format="pdf"
 ```
 ![figure_1](https://github.com/user-attachments/assets/d915717e-d201-4194-98e2-9bffdd9b8ef9)
 
-# Online Tutorial <a name="Tutorial"></a>    [![General Badge](https://img.shields.io/badge/YouTube-Tutorial-%23FF0000?style=plastic&labelColor=%23282828&color=%23FF0000&link=https%3A%2F%2F)](https://www.youtube.com/watch?v=wGJHwc5ksMA)
+# Online Tutorial <a name="Tutorial"></a>    [![General Badge](https://img.shields.io/badge/YouTube-Tutorial-%23FF0000?style=plastic&labelColor=%23282828&color=%23FF0000&link=https%3A%2F%2F)]()
 
-youtube link
+PENDING...
 
 # Acknowledgments <a name="Acknowledgments"></a> 
 
