@@ -47,7 +47,7 @@ _Alternatively, by downloading the Github repository and activating the environm
 
 ```
 # Download this GitHub repository
-git clone https://github.com/EmilyFotopoulou/.git
+git clone https://github.com/EmilyFotopoulou/Geomaps_pie.py.git
 
 # Set up conda dependencies 
 conda env create -f env_geomaps.yml 
