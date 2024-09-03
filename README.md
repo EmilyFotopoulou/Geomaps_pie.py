@@ -30,15 +30,18 @@ The program requires a shapefile for the geographic plotting and a corresponding
 
 # Installation <a name="Installation"></a>
 ## Dependencies
+> [!NOTE]
+> The program requires `conda` to run
+
 ### Manual Installation
 
 ```
 >you can manually install all dependencies by running:
-conda install conda-forge::matplotlib-base=3.5.2 conda-forge::pandas conda-forge::basemap conda-forge::geopandas plotly::plotly conda-forge::fiona conda-forge::shapely conda-forge::openpyxl conda-forge::typed-ast conda-forge::progressbar
+conda install conda-forge::git conda-forge::matplotlib-base=3.5.2 conda-forge::pandas conda-forge::basemap conda-forge::geopandas plotly::plotly conda-forge::fiona conda-forge::shapely conda-forge::openpyxl conda-forge::typed-ast conda-forge::progressbar
 ```
 
 > [!NOTE]
-> Note version of matplotlib that works faster is 3.5.2*
+> The version of matplotlib that works faster is 3.5.2*
 
 \
 _Alternatively, by downloading the Github repository and activating the environment like shown in section below._
