@@ -16,7 +16,7 @@ The program requires a shapefile for the geographic plotting and a corresponding
 
 
 > [!IMPORTANT]
-> Please note that all examples shown are based on dummy data, created solely for the purpose of demonstrating the program's capabilities. The figures presented do not reflect actual trends.
+> **Please note that all examples shown are based on dummy data, created solely for the purpose of demonstrating the program's capabilities. The figures presented do not reflect actual trends.**
 
 
 # Table of contents
