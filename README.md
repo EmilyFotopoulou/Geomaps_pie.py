@@ -43,6 +43,12 @@ conda install conda-forge::matplotlib-base=3.5.2 conda-forge::pandas conda-forge
 > [!NOTE]
 > The version of matplotlib that works faster is 3.5.2*
 
+If you are having channel dependecy issues run:
+```
+conda install -c conda-forge matplotlib-base=3.5.2 pandas basemap geopandas plotly::plotly fiona shapely openpyxl typed-ast progressbar pyproj
+```
+
+
 \
 _Alternatively, by downloading the Github repository and activating the environment like shown in section below._
 
