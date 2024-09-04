@@ -40,7 +40,7 @@ dependencies:
   - fontconfig=2.14.2=h14ed4e7_0
   - fonts-conda-ecosystem=1=0
   - fonts-conda-forge=1=0
-  - fonttools=4.53.1=py310h5b4e0ec_0
+  - fonttools=4.53.1=py310ha75aee5_1
   - freetype=2.12.1=h267a509_2
   - freexl=1.0.6=h166bdaf_1
   - gdal=1.9.2=0
@@ -51,6 +51,7 @@ dependencies:
   - gettext=0.22.5=he02047a_3
   - gettext-tools=0.22.5=he02047a_3
   - giflib=5.2.2=hd590300_0
+  - git=2.42.0=pl5321h86e50cf_0
   - h2=4.1.0=pyhd8ed1ab_0
   - hdf4=4.2.15=h9772cbc_5
   - hdf5=1.12.2=nompi_h4df4325_101
@@ -92,7 +93,7 @@ dependencies:
   - libgfortran=14.1.0=h69a702a_1
   - libgfortran-ng=14.1.0=h69a702a_1
   - libgfortran5=14.1.0=hc5f4f2c_1
-  - libglib=2.80.2=hf974151_0
+  - libglib=2.78.1=hebfc3b9_0
   - libgomp=14.1.0=h77fa898_1
   - libiconv=1.17=hd590300_2
   - libkml=1.3.0=h01aab08_1016
@@ -114,6 +115,7 @@ dependencies:
   - libuuid=2.38.1=h0b41bf4_0
   - libwebp-base=1.4.0=hd590300_0
   - libxcb=1.13=h7f98852_1004
+  - libxcrypt=4.4.36=hd590300_1
   - libxml2=2.10.3=hca2bb57_4
   - libzip=1.10.1=h2629f0a_3
   - libzlib=1.2.13=h4ab18f5_6
@@ -130,11 +132,12 @@ dependencies:
   - numpy=1.26.4=py310hb13e2d6_0
   - openjpeg=2.5.0=h7d73246_1
   - openpyxl=3.1.5=py310h2372a71_0
-  - openssl=3.1.6=h4ab18f5_0
+  - openssl=3.1.7=hb9d3cd8_0
   - packaging=24.1=pyhd8ed1ab_0
   - pandas=2.2.2=py310hf9f9076_1
   - pcre=8.45=h9c3ff4c_0
-  - pcre2=10.43=hcad00b1_0
+  - pcre2=10.40=hc3806b6_0
+  - perl=5.32.1=7_hd590300_perl5
   - pillow=9.2.0=py310h454ad03_3
   - pip=24.2=pyh8b19718_1
   - pixman=0.43.2=h59595ed_0
@@ -157,10 +160,10 @@ dependencies:
   - pytz=2024.1=pyhd8ed1ab_0
   - readline=8.2=h8228510_1
   - requests=2.32.3=pyhd8ed1ab_0
-  - rtree=1.3.0=py310h8dc1cec_1
+  - rtree=1.3.0=py310h8dc1cec_2
   - scikit-learn=1.5.1=py310h146d792_0
   - scipy=1.14.1=py310ha3fb0e1_0
-  - setuptools=72.2.0=pyhd8ed1ab_0
+  - setuptools=73.0.1=pyhd8ed1ab_0
   - shapely=1.8.5=py310h5e49deb_1
   - six=1.16.0=pyh6c4a22f_0
   - snappy=1.2.1=ha2e4443_0
@@ -188,8 +191,8 @@ dependencies:
   - xorg-renderproto=0.11.1=h7f98852_1002
   - xorg-xextproto=7.3.0=h0b41bf4_1003
   - xorg-xproto=7.0.31=h7f98852_1007
-  - xyzservices=2024.6.0=pyhd8ed1ab_0
+  - xyzservices=2024.9.0=pyhd8ed1ab_0
   - xz=5.2.6=h166bdaf_0
   - zlib=1.2.13=h4ab18f5_6
-  - zstandard=0.23.0=py310h64cae3c_0
+  - zstandard=0.23.0=py310ha39cb0e_1
   - zstd=1.5.6=ha6fb4c9_0
