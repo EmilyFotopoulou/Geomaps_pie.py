@@ -120,7 +120,7 @@ _This script will edit your shapefile to adjust your headers to the correct name
 
 The script needs to be run twice. For the first run, simply provide the directory path to your shapefile. E.g.:
 
-`python Codes/fix_shapefile.py –-shapefile Example_files/jam_admbnda_adm1_sdc_20240802.shp`
+`python Codes/fix_shapefile.py –-shape_file Example_files/jam_admbnda_adm1_sdc_20240802.shp`
 
 > [!NOTE]
 > The areas could be regions, countries, cities or any geographic specification you require.
@@ -133,7 +133,7 @@ The program will display the first 5 rows of your shapefile, allowing you to ide
 
 After identifying the column of interest, run the code a second time, specifying the column you want to plot.
 
-`python Codes/fix_shapefile.py –-shapefile Example_files/jam_admbnda_adm1_sdc_20240802.shp --column "ADM1_EN"`
+`python Codes/fix_shapefile.py –-shape_file Example_files/jam_admbnda_adm1_sdc_20240802.shp --column "ADM1_EN"`
 
 This will adjust your shapefile for the Geomaps_pie.py to run.
 
