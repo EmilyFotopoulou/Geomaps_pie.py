@@ -120,7 +120,7 @@ _This script will edit your shapefile to adjust your headers to the correct name
 
 The script needs to be run twice. For the first run, simply provide the directory path to your shapefile. E.g.:
 
-`python Codes/fix_shapefile.py –-shape_file Example_files/jam_admbnda_adm1_sdc_20240802.shp`
+`python Codes/fix_shapefile.py --shape_file Example_files/jam_admbnda_adm1_sdc_20240802.shp`
 
 > [!NOTE]
 > The areas could be regions, countries, cities or any geographic specification you require.
