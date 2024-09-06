@@ -181,6 +181,12 @@ http://bboxfinder.com
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/f989f6e4-7d2b-4575-bdee-cfe92afb81c3">
 </div>
 
+#### Simple map - only displays map area and boundaries along the pie charts:
+
+**`--plainmapcol`**  : a string of a Matplotlib colour or Hex colour code setting the background colour of the map. Default: “lightsteelblue”
+
+**`--simple_map_boundaries`**  : a default argument that adds boundary lines to the simple version of the map. Does not require setting to True. 
+
 
 #### Embelished map - diplays choropleth information on map along the pie charts:
 
@@ -188,11 +194,6 @@ http://bboxfinder.com
 
 **`--colormap`**  : a string with the name of a Matplotlib pallet, or a list of at least two custom Hex colour codes. (use -h for colour pallet options and example of list of Hex code in examples section). 
 
-#### Simple map - only displays map area and boundaries along the pie charts:
-
-**`--plainmapcol`**  : a string of a Matplotlib colour or Hex colour code setting the background colour of the map. Default: “lightsteelblue”
-
-**`--simple_map_boundaries`**  : a default argument that adds boundary lines to the simple version of the map. Does not require setting to True. 
 
 #### Pie chart editing:
 
