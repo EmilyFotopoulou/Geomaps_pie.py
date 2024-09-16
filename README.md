@@ -76,7 +76,7 @@ conda env create -f env_geomaps.yml
 conda activate env_geomaps
 ```
 
-![installation]https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/installation.png)
+![installation](https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/installation.png)
 
 
 > [!TIP]
