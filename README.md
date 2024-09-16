@@ -1,5 +1,5 @@
 
-![Final_final_logo](https://github.com/user-attachments/assets/599c5bb0-8bfe-46c3-8785-5ed5afeb4230)
+![Final_final_logo](https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/Final_final_logo.png)
 
 
 # Overview
@@ -11,7 +11,7 @@ The program requires a shapefile for the geographic plotting and a corresponding
 ![examples](https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/examples.png)
 
 
-![examples3](https://github.com/user-attachments/assets/fa86d557-b252-461a-b384-9f07fc813779)
+![examples3](https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/examples3.png)
 
 
 
@@ -76,7 +76,7 @@ conda env create -f env_geomaps.yml
 conda activate env_geomaps
 ```
 
-![conda_env](https://github.com/user-attachments/assets/2c9c7194-cc25-45df-a587-952a0603add1)
+![installation]https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/installation.png)
 
 
 > [!TIP]
@@ -94,13 +94,13 @@ The program requires 4 inputs to run.
 1)	A shapefile (.shp) with the country and or regions to be plotted. Shapefiles vary throughout different databases, may not have the required columns. File needs to contain a column with geographical named divisions (e.g.ADM1_EN). To amend this, please see section below. E.g.:
 
 <div align="center">
-  <img width="800" alt="image" src="https://github.com/user-attachments/assets/719f4e97-0a57-42eb-8b4b-3a8b0e77c144">
+  <img width="800" alt="image" src="https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/Input_shapefile.png">
 </div>
 
 2) 	A metadata file (.xlsx) is required. It should have a minimum of two columns for the program to run. One column should be the country and/or regions to be plotted (the column must be named “RGN21NM” and this column should match the shapefile *) and at least one column with categorical values (e.g. Plasmids) used for the pie charts.  Optional numerical column used for the background map density values (e.g. Population). Any additional columns can be added (e.g. Isolates) without affecting the efficiency or function of the program. E.g.:
   
 <div align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/f7af83e2-6058-47d0-83cd-b5c1a7cf3817">
+  <img width="500" alt="image" src="https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/Input_metadata.png">
 </div>
 
 > [!NOTE]
@@ -143,7 +143,7 @@ This will adjust your shapefile for the Geomaps_pie.py to run.
 
 ### Example
 
-![fix_shape](https://github.com/user-attachments/assets/a7d8178b-fbec-4555-928b-6b1b80f296b0)
+![fix_shape](https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/fix_shape.png)
 
 
 # Arguments <a name="Arguments"></a>
@@ -173,12 +173,12 @@ You can find find the bounding box coordinates using a number of geographic map 
 http://bboxfinder.com
 
 <div align="center">
-  <img width="800" alt="image" src="https://github.com/user-attachments/assets/49f97931-b7df-4943-ad94-1b914b5f267d">
+  <img width="800" alt="image" src="https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/BBox_map.png">
 </div>
 
 <br />
 <div align="center">
-  <img width="800" alt="image" src="https://github.com/user-attachments/assets/f989f6e4-7d2b-4575-bdee-cfe92afb81c3">
+  <img width="800" alt="image" src="https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/Map_coordinates.png">
 </div>
 
 #### Simple map - only displays map area and boundaries along the pie charts:
@@ -257,14 +257,14 @@ Unless otherwise specified, the output file will be saved in the working directo
 ```
 python Codes/Geomaps_pie.py --shape_file Example_files/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Example_files/Jamaica_metadata_test.xlsx --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}"
 ```
-![image](https://github.com/user-attachments/assets/a991f403-d2c6-464b-ad13-aea02798fe83)
+![Jamaica_simple_map](https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/Jamaica_simple_map.png)
 
 
 #### Embelished graph:
 ```
 python Codes/Geomaps_pie.py --shape_file Example_files/jam_admbnda_adm1_sdc_20240802_fixed.shp --metadata_file Example_files/Jamaica_metadata_test.xlsx --agg_column 'Plasmids' --colours_dict "{'InCFIB':'yellow', 'InCP':'deeppink', 'InCA/C':'#00DD08', 'InCN':'darkturquoise'}" --llcrnrlon=-78.397064 --llcrnrlat=17.691129 --urcrnrlon=-76.164093 --urcrnrlat=18.553834 --agg_mapinfo="Population" --colormap="['#E7F3FF', 'pink']" --label_style='style1' --pie_fontsize=15 --pie_rotation=45 --pie_size=500 --pie_text_loc=0.05 --colorbar_title="Population Density" --colorbar_fontsize=20 --legend_title='Plasmids' --legend_fontsize=15 --output_file_prefix='Jamaica_map_population_and_plasmids' --file_format="pdf"
 ```
-![figure_1](https://github.com/user-attachments/assets/d915717e-d201-4194-98e2-9bffdd9b8ef9)
+![Jamaica_complex_map](https://github.com/EmilyFotopoulou/Geomaps_pie.py/blob/main/Figures/Jamaica_complex_map.png)
 
 # Online Tutorial <a name="Tutorial"></a>    [![General Badge](https://img.shields.io/badge/YouTube-Tutorial-%23FF0000?style=plastic&labelColor=%23282828&color=%23FF0000&link=https%3A%2F%2F)](https://www.youtube.com/watch?v=_tkvN_IUQDw&t=112s)
 
