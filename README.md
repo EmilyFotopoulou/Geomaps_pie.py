@@ -268,7 +268,7 @@ python Codes/Geomaps_pie.py --shape_file Example_files/jam_admbnda_adm1_sdc_2024
 
 # Online Tutorial <a name="Tutorial"></a>    [![General Badge](https://img.shields.io/badge/YouTube-Tutorial-%23FF0000?style=plastic&labelColor=%23282828&color=%23FF0000&link=https%3A%2F%2F)](https://www.youtube.com/watch?v=_tkvN_IUQDw&t=112s)
 
-https://www.youtube.com/watch?v=_tkvN_IUQDw&t=112s
+A full tutorial on how to use geomaps_pie.py can be found [ **here.** ](https://www.youtube.com/watch?v=_tkvN_IUQDw&t=112s)
 
 # Acknowledgments <a name="Acknowledgments"></a> 
 
