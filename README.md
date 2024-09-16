@@ -141,7 +141,7 @@ This will adjust your shapefile for the Geomaps_pie.py to run.
 > Don’t forget to adjust your input shapefile to 'the _fixed' version.
 
 
-### Exmaple
+### Example
 
 ![fix_shape](https://github.com/user-attachments/assets/a7d8178b-fbec-4555-928b-6b1b80f296b0)
 
